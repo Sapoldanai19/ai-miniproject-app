@@ -12,7 +12,7 @@ api_key = os.getenv("GEMINI_API_KEY")
 if api_key:
     genai.configure(api_key=api_key)
     # ใช้รุ่น flash-latest เพื่อความใหม่ล่าสุด
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-pro')
 else:
     st.error("กรุณาตั้งค่า GEMINI_API_KEY ใน Environment Variables")
 
